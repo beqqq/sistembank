@@ -1,8 +1,5 @@
 Algoritmo "sistema bancario"
-// Disciplina   : [Linguagem e Lógica de Programação]
-// Professor   : Antonio Carlos Nicolodi 
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
+// Disciplina   : [Linguagem e LÃ³gica de ProgramaÃ§Ã£o]
 // Data atual  : 03/04/2024
 
 
@@ -15,38 +12,38 @@ Var
 
 
 Inicio
- // Inicialização do saldo da conta
-   escreva("Digite o seu saldo, caso não tenha uma conta digite *n*: ")
+ // InicializaÃ§Ã£o do saldo da conta
+   escreva("Digite o seu saldo, caso nÃ£o tenha uma conta digite *n*: ")
    leia (saldo)
 
    // Loop principal do sistema
-   Enquanto opcao <> 5 Faça
-      // Exibe o menu de opções
+   Enquanto opcao <> 5 FaÃ§a
+      // Exibe o menu de opÃ§Ãµes
       Escreval("1. Abrir conta")
-      Escreval("2. Fazer depósito")
+      Escreval("2. Fazer depÃ³sito")
       Escreval("3. Fazer saque")
       Escreval("4. Verificar saldo")
       Escreval("5. Sair")
-      Escreval("Escolha uma opção:")
+      Escreval("Escolha uma opÃ§Ã£o:")
       Leia(opcao)
 
-      // Executa a opção escolhida
+      // Executa a opÃ§Ã£o escolhida
       escolha opcao
          caso 1
             // Abrir conta
             Escreval("Digite seu nome:")
             Leia(nome)
-            Escreval("Digite sua idade(somente em números:")
+            Escreval("Digite sua idade(somente em nÃºmeros:")
             Leia(idade)
-            Escreva("Digite o seu cpf (somente números):")
+            Escreva("Digite o seu cpf (somente nÃºmeros):")
             Leia(cpf)
             Escreval("Conta aberta com sucesso!")
          caso 2
-            // Fazer depósito
-            Escreval("Digite o valor do depósito:")
+            // Fazer depÃ³sito
+            Escreval("Digite o valor do depÃ³sito:")
             Leia(valor)
             saldo <- saldo + valor
-            Escreval("Depósito realizado com sucesso!")
+            Escreval("DepÃ³sito realizado com sucesso!")
          caso 3
             // Fazer saque
             Escreval("Digite o valor do saque:")
@@ -59,13 +56,13 @@ Inicio
             FimSe
          caso 4
             // Verificar saldo
-            Escreval("Saldo disponível: ", saldo)
+            Escreval("Saldo disponÃ­vel: ", saldo)
          caso 5
             // Sair do programa
             Escreval("Saindo do sistema...")
          caso contrario:
-            // Opção inválida
-            Escreval("Opção inválida!")
+            // OpÃ§Ã£o invÃ¡lida
+            Escreval("OpÃ§Ã£o invÃ¡lida!")
       fimEscolha
    FimEnquanto
 FimAlgoritmo
